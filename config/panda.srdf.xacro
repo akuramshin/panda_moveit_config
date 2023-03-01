@@ -8,7 +8,7 @@
 
     <xacro:include filename="$(find panda_moveit_config)/config/arm.xacro" />
     <!-- panda_arm group: eef frame aligned to robot's flanche -->
-    <xacro:arm name="$(arg arm_id)_arm" tip_link="$(arg arm_id)_link8"/>
+    <xacro:arm name="$(arg arm_id)_arm" tip_link="virtual_eef_link"/>
 
     <!--Add the hand if people request it-->
     <xacro:arg name="hand" default="false" />
